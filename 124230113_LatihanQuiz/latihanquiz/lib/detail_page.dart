@@ -80,7 +80,7 @@ class DetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
 
-                  // Informasi kendaraan ke bawah
+                  // Informasi kendaraan
                   _buildInfoRow("Tipe", vehicle.type),
                   _buildDivider(),
                   _buildInfoRow("Mesin", vehicle.engine),

@@ -12,8 +12,8 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
         elevation: 4,
-        backgroundColor: const Color(0xFF0D47A1), // ✅ biru tua
-        toolbarHeight: 80, // ✅ AppBar lebih lebar
+        backgroundColor: const Color(0xFF0D47A1), 
+        toolbarHeight: 80, // 
         title: Text(
           "Selamat Datang, ${username ?? 'User'}",
           style: const TextStyle(
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // ✅ Image with Hero animation
+                  // Image with Hero animation
                   Hero(
                     tag: vehicle.name,
                     child: ClipRRect(
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                           ),
-                          // ✅ Gradient overlay
+                          // Gradient overlay
                           Container(
                             height: 180,
                             decoration: BoxDecoration(
@@ -111,7 +111,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // ✅ Info box
+                  // Info box
                   Padding(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 16,
@@ -131,7 +131,7 @@ class HomePage extends StatelessWidget {
                           Icons.arrow_forward_ios,
                           size: 16,
                           color: Color(0xFF0D47A1),
-                        ), // match biru
+                        ), 
                       ],
                     ),
                   ),

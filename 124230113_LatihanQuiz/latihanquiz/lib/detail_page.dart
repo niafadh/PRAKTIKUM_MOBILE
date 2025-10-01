@@ -17,21 +17,21 @@ class DetailPage extends StatelessWidget {
           style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
-            color: Colors.white, // ✅ Font putih
+            color: Colors.white, 
           ),
         ),
         centerTitle: true,
         elevation: 0,
         iconTheme: const IconThemeData(
           color: Colors.white,
-        ), // ✅ Back icon putih
+        ), 
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // ✅ Hero Animation untuk gambar
+            
             Hero(
               tag: vehicle.name,
               child: ClipRRect(
@@ -51,7 +51,7 @@ class DetailPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // ✅ Card Info Kendaraan
+            //  Card Info Kendaraan
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(16),
@@ -118,7 +118,7 @@ class DetailPage extends StatelessWidget {
     );
   }
 
-  // ✅ Widget untuk membuat baris info
+  // Widget untuk membuat baris info
   Widget _buildInfoRow(String label, String value, {bool isHighlight = false}) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6),
@@ -142,7 +142,7 @@ class DetailPage extends StatelessWidget {
     );
   }
 
-  // ✅ Divider tipis antar info
+  // Divider tipis antar info
   Widget _buildDivider() {
     return Divider(color: Colors.grey[300], thickness: 1, height: 12);
   }
